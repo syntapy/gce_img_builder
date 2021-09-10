@@ -1,3 +1,15 @@
 [submodule "gcp_project"]
 	path = project
 	url = git@github.com:syntapy/gcp_project.git
+[submodule "gcp_apis"]
+	path = apis
+	url = git@github.com:syntapy/gcp_apis.git
+[submodule "gce-img-builder"]
+	path = build
+	url = git@github.com:syntapy/gce-img-builder.git
+[submodule "repos/gcp_packer"]
+	path = repos/packer
+	url = git@github.com:syntapy/gcp_packer.git
+[submodule "repos/gce_img_packer_start"]
+	path = repos/machine_image
+	url = git@github.com:syntapy/gce_img_packer_start.git
