@@ -19,6 +19,7 @@ module "project" {
   org_id = var.org_id
   project_name = var.project_name
   region = var.region
+  rng_seed = var.rng_seed
 }
 
 locals {

@@ -21,3 +21,8 @@ variable "project_name" {
   type        = string
   default     = "GCE Image Builder"
 }
+
+variable "rng_seed" {
+  type        = string
+  default     = "666"
+}
