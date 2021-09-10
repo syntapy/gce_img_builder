@@ -1,0 +1,3 @@
+[submodule "gcp_project"]
+	path = project
+	url = git@github.com:syntapy/gcp_project.git
