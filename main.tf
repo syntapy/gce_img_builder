@@ -44,15 +44,3 @@ module "build" {
   sourcerepo_service = module.apis.sourcerepo_service
   cloudbuild_service = module.apis.cloudbuild_service
 }
-
-output "project_name" {
-  value = module.project.name
-}
-
-output "project_id" {
-  value = local.project_id
-}
-
-output "project_number" {
-  value = module.project.number
-}
