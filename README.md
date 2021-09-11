@@ -6,7 +6,7 @@ There are two source repos to be hosted on Google Cloud Repository:
  - Packer image builder in `repos/packer` to allow running packer in cloud build
  - The GCE image builder in `repos/machine_image` which uses packer
 
-The terraform configs will also creates the project as well
+The terraform configs will also creates the Google Cloud project as well
 
 To Run
 ======
@@ -19,7 +19,9 @@ Needs an organization level account (google workspace account) and works with th
 
 You may need to run `terraform apply` twice, since I think a service acount gets created on first run for a project
 
-You will get the output URLs for the two google source repositories
+You will get the output URLs for the two google source repositories. These are labeled:
+ - `packer_build_repo`
+ - `machine_image_repo`
 
 Then cd into `repos/packer/` and run `git add remote google <packer_build_repo>` and push
 
