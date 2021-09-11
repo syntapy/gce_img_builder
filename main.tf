@@ -41,6 +41,8 @@ module "build" {
   project_name = module.project.name
   project_number = module.project.number
   project_id = local.project_id
+  sourcerepo_service = module.apis.sourcerepo_service
+  cloudbuild_service = module.apis.cloudbuild_service
 }
 
 output "project_name" {
@@ -48,7 +50,7 @@ output "project_name" {
 }
 
 output "project_id" {
-  value = module.project.id
+  value = local.project_id
 }
 
 output "project_number" {
